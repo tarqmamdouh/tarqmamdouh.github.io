@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html
+	xmlns="http://www.w3.org/1999/xhtml"
+>
+<head>
+<meta name="viewport" content="width=device-width">
+<link href="css\style.css" rel="stylesheet" type="text/css">
+ <link rel="icon" type="image/png" href="imgs/icon.png">   
+<link href="css\hover-min.css" rel="stylesheet">
+  <script src="js\jquery.min.js"></script>
+  <script src="js\bootstrap.min.js"></script>
+  <script src="js\carousele.js"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  $(".Menu a").click(function(e) {
+      e.preventDefault();
+      var src = $(this).attr('href');
+
+      $('#iframe1').fadeOut(1000,function(){
+          $('#iframe1').attr('src',src ).load(function(){
+              $(this).fadeIn(1000);    
+          });
+      });
+
+ });
+});
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tariq Mamdouh</title>
+</head>
+<body>
+<div class="Menu">
+<h1><a href="carousele.html" id="home" target="targetframe" > Tariq  </a></h1>
+<ul>
+<li> <a  href="about.html" class="button hvr-grow-shadow " id="about" target="targetframe" ><span>About</span> </a> </li>
+<li> <a  href="Work.html" target="targetframe" class="button hvr-grow-shadow" id="Work" ><span>Work</span> </a> </li>
+<li> <a   href="Blog.html" target="targetframe" class="button hvr-grow-shadow" id="Blog" ><span>Blog</span> </a></li>
+<li> <a class="button hvr-grow-shadow " id="Contact" href="contact.html" target="targetframe" ><span>Contact</span> </a></li>
+</ul>
+<div class="vertical-line" style="height: 400px;" />
+<iframe class="carousel" src="carousele.html" id="iframe1" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0""></iframe>
+    <footer class="footer-me">
+    <br />
+        </footer>
+</body>
+</html>

@@ -1,0 +1,146 @@
+@font-face {
+	font-family: MyHeadFont3;
+    src: url(ALGER.TTF)
+    font-family: MyHeadFont2;
+    src: url(andlso.TTF);
+}
+body {
+  display: block;
+  padding: 20px;
+  font-family: sans-serif;
+  background-color: #E7E7E8;
+}
+
+.social-icons {
+  position: relative;
+  bottom:-460px;
+  right:20px;
+}
+
+.social-icons li{
+	margin-left:25px;
+}
+
+.icon {
+  float: left;
+  position: relative;
+  width: 19%;
+  height: 0;
+  margin: 1% 0.5%;
+  padding-bottom: 19%;
+}
+@media all and (min-width: 640px) {
+  .icon {
+    width: 9%;
+    padding-bottom: 9%;
+  }
+}
+.icon:last-of-type {
+  margin-right: 0;
+}
+.icon a {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 10px;
+  background-color: #fff;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-transition: all .2s ease-out;
+          transition: all .2s ease-out;
+}
+.icon a:hover {
+  background-color: #222;
+  background-size: 0%;
+  -webkit-transition: all .2s ease-out;
+          transition: all .2s ease-out;
+}
+
+.icon__name {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin-top: -7px;
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  -webkit-transition: all .3s ease-out;
+          transition: all .3s ease-out;
+  opacity: 0;
+  -webkit-filter: blur(25px);
+          filter: blur(25px);
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+.icon:hover .icon__name {
+  -webkit-transition: all .3s ease-out;
+          transition: all .3s ease-out;
+  opacity: 1;
+  -webkit-filter: blur(0);
+          filter: blur(0);
+}
+
+.icon--facebook a {
+  background-color: #3b5998;
+  background-image: url("https://raw.githubusercontent.com/danleech/simple-icons/master/icons/facebook/facebook-128.png");
+}
+
+.icon--linkedin a {
+  background-color: #007fb1;
+  background-image: url("https://raw.githubusercontent.com/danleech/simple-icons/master/icons/linkedin/linkedin-128.png");
+}
+
+.icon--instagram a {
+  background-color: #5c3d2e;
+  background-image: url("https://raw.githubusercontent.com/danleech/simple-icons/master/icons/instagram/instagram-128.png");
+}
+.icon--gmail a {
+  background-color: #F00;
+  background-image: url("https://raw.githubusercontent.com/danleech/simple-icons/master/icons/gmail/gmail-128.png");
+}
+
+
+#navi{
+	margin-left:700px;
+	margin-top:150px;
+}
+#hh {
+	font-family: MyHeadFont2;
+        font-size:70px;
+		position:absolute;
+		top:180px;	
+		left: 40px;
+}
+p {
+	font-family: MyHeadFont3;
+        font-size: 30px;
+		position:absolute;
+		top:320px;	
+		left:40px;
+        font-size: 30px;
+        color: #373737;
+        line-height: 1.3em;
+        margin-bottom: 0.7em;
+        clear: both;
+		max-width:600;
+}
+.footer-me{
+	margin-top:663px;
+  color: #333;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+}
+svg {
+  position: absolute;
+  top: 50px;
+  left: 240px;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}

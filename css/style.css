@@ -1,0 +1,104 @@
+@font-face {
+    font-family: MyHeadFont;
+    src: url(PARCHM.TTF);
+	font-weight: bold;
+}
+.carousel{
+	position:fixed;
+	left:300px;
+	bottom:-30px;
+	width:1048px;
+	height:750px
+	
+}
+.Menu{
+	position:fixed;
+}
+.footer-me{
+	margin-top:81px;
+  color: #333;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+}
+.Menu h1{font-family:MyHeadFont;
+font-weight:bold;
+font-size:181px;
+margin-top: 0px;
+margin-bottom: -25px;
+position:relative;
+bottom:20px;
+left:25px;
+text-shadow:5px 5px 12px black;
+text-decoration:none;
+ }
+.Menu li{
+	display:block;
+	margin-bottom: inherit;
+	margin-bottom:30px;
+	font-family:"Times New Roman", Times, serif;
+	font-size:13px;
+}
+.button {
+	display: block;
+	height: 70px;
+	width: 200px;
+	background: #FFF;
+	color: rgba(0, 0, 0, 0.8);
+	text-align: center;
+	font: bold 3.2em/100px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	position: relative;
+	right: 28px;
+	visibility: visible;
+}
+a.button {
+    text-decoration: none;
+	
+}
+a.button:hover {
+	background-color:#DADADA
+	
+}
+a span{
+	position:relative;
+	bottom:13px;
+	left:30px;
+}
+#Contact span{
+	position:relative;
+	bottom:13px;
+	left:32px;
+}
+#about {
+	background-image:url(../imgs/about.jpg);
+	background-repeat: no-repeat;
+}
+#Work {
+	background-image:url(../imgs/work.jpg);
+	background-repeat: no-repeat;
+}
+#Blog {
+	background-image:url(../imgs/blog.jpg);
+	background-repeat: no-repeat;
+}
+#Contact {
+	background-image:url(../imgs/contact.jpg);
+	background-repeat: no-repeat;
+	width:230px;
+	
+}
+#home {
+	text-decoration:none;
+	color:#000;
+}
+div.vertical-line{
+  width: 0px;
+  background-color: silver;
+  height: 100%;
+  float: left;
+  border: 2px ridge silver ;
+  border-radius: 2px;
+  position:fixed;
+  left:290px;
+  bottom:100px
+}
