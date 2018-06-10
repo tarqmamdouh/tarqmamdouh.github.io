@@ -1,0 +1,317 @@
+body{
+    width: 100%;
+    height: 100%;
+}
+video {
+  top: -20px;
+  left: 0px;
+  position: fixed;
+  width: 100%    !important;
+  height: auto !important;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+display: none;
+}
+body {
+    background-color: #FCFCFC;
+}
+
+.cover {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.blur-in {
+    -webkit-animation: blur 2s forwards;
+    -moz-animation: blur 2s forwards;
+    -o-animation: blur 2s forwards;
+    animation: blur 2s forwards;
+}
+
+.blur-out {
+    -webkit-animation: blur-out 2s forwards;
+    -moz-animation: blur-out 2s forwards;
+    -o-animation: blur-out 2s forwards;
+    animation: blur-out 2s forwards;
+}
+
+@-webkit-keyframes blur {
+    0% {
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: blur(0px);
+    }
+
+    100% {
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -o-filter: blur(4px);
+        -ms-filter: blur(4px);
+        filter: blur(4px);
+    }
+}
+
+@-moz-keyframes blur {
+    0% {
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: blur(0px);
+    }
+
+    100% {
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -o-filter: blur(4px);
+        -ms-filter: blur(4px);
+        filter: blur(4px);
+    }
+}
+
+@-o-keyframes blur {
+    0% {
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: blur(0px);
+    }
+
+    100% {
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -o-filter: blur(4px);
+        -ms-filter: blur(4px);
+        filter: blur(4px);
+    }
+}
+
+@keyframes blur {
+    0% {
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: blur(0px);
+    }
+
+    100% {
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -o-filter: blur(4px);
+        -ms-filter: blur(4px);
+        filter: blur(4px);
+    }
+}
+
+@-webkit-keyframes blur-out {
+    0% {
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -o-filter: blur(4px);
+        -ms-filter: blur(4px);
+        filter: blur(4px);
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: blur(0px);
+    }
+}
+
+@-moz-keyframes blur-out {
+    0% {
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -o-filter: blur(4px);
+        -ms-filter: blur(4px);
+        filter: blur(4px);
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: blur(0px);
+    }
+}
+
+@-o-keyframes blur-out {
+    0% {
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -o-filter: blur(4px);
+        -ms-filter: blur(4px);
+        filter: blur(4px);
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: blur(0px);
+    }
+}
+
+@keyframes blur-out {
+    0% {
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -o-filter: blur(4px);
+        -ms-filter: blur(4px);
+        filter: blur(4px);
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: blur(0px);
+    }
+}
+
+.content {
+    width: 650px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+span {
+    color: white;
+}
+
+.pop-up {
+    position: absolute;
+    margin-top: -2% !important;
+    margin-left: 32% !important;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+
+
+#BO {
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background:#000;
+    opacity:0.5;
+    z-index:2;
+}
+
+body{
+  background-color: #00aeef;
+}
+.window{
+	width: 80%;
+	max-width: 800px;
+	max-height: 450px;
+	margin-top: 0%;
+    margin-left: -6%;
+	font-family: 'Arvo', serif;
+	border-radius: 5px;
+	overflow: hidden;
+	background-color: #ddd;
+	-webkit-box-shadow: 10px 10px 1000px rgba(0,0,0,.2);
+	box-shadow: 10px 10px 0 rgba(0,0,0,.2);
+}
+.bar{
+	text-align: center;
+	height: 32px;
+	/*border-radius: 5px 5px 0 0;*/
+	line-height: 32px;
+	font-size: 1.5em;
+	/*padding: .4em;*/
+}
+
+.buttons{
+	position: absolute;
+	padding: .4em;
+}
+.icon{
+	display: inline-block;
+	margin-right: .3em;
+	float: left;
+	width: .75em;
+	height: .75em;
+	border-radius: 100%;
+}
+#close{
+	background-color: #e4514f;
+}
+#minimize{
+	background-color: #f4c025;
+}
+#expand{
+	background-color: #3ec930;
+}
+
+.screen{
+	background-color: #222;
+	color: #fff;
+	overflow: scroll !important;
+	padding: 1.5em;
+	font-family: 'Arvo', serif;
+	font-size: 1.5em;
+	line-height: 2em;
+	height: 80vh;
+	max-height: 600px;
+}
+/********************** 720p *********************************/
+@media  screen and (max-width: 1600px) {
+.window{
+	width: 80%;
+	max-width: 600px;
+	max-height: 400px;
+	margin-top: 0%;
+    margin-left: -6%;
+	font-family: 'Arvo', serif;
+	border-radius: 5px;
+	overflow: hidden;
+	background-color: #ddd;
+	-webkit-box-shadow: 10px 10px 1000px rgba(0,0,0,.2);
+	box-shadow: 10px 10px 0 rgba(0,0,0,.2);
+}
+.bar{
+	text-align: center;
+	height: 28px;
+	/*border-radius: 5px 5px 0 0;*/
+	line-height: 28px;
+	font-size: 0.95em;
+	/*padding: .4em;*/
+}
+
+.buttons{
+	position: absolute;
+	padding: .4em;
+}
+.icon{
+	display: inline-block;
+	margin-right: .3em;
+	float: left;
+	width: .75em;
+	height: .75em;
+	border-radius: 100%;
+}
+#type{
+    font-size: .55em;
+}
+#logo{
+ height: 50% !important;        
+}
+    
+}
