@@ -50,8 +50,7 @@ class EarningsData extends React.Component {
     }
 
     render() {
-        this.page_code();
-        return this.page_code();
+        return <h1> component loaded remotely </h1>
     }
 }
 
