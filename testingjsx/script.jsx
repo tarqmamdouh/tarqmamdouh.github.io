@@ -55,5 +55,7 @@ class EarningsData extends React.Component {
     }
 }
 
-const domContainer = document.querySelector('#container');
-ReactDOM.render(EarningsData, domContainer);
+ReactDOM.render(
+  <EarningsData />,
+  document.getElementById('container')
+);
